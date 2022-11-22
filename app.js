@@ -7,6 +7,7 @@ function handleTitleClick(){
   } else {
     h1.classList.add(clickedClass);
   };
+  //h1.classList.toggle("clicked"); 이 한줄로 위에 있는 모든걸 가능하게함
 }//마우스로 title를 click 할 때
 
 function handleMouseEnter(){

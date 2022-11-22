@@ -1,15 +1,12 @@
 const h1 = document.querySelector(".hello h1")
 
 function handleTitleClick(){
-  const currentColor = h1.style.color;
-  let newColor;
-  if(currentColor === "blue"){
-    newColor = "tomato"
-  }
-  else{
-    newColor = "blue"
-  }
-  h1.style.color = newColor; //color에 newColor가 변화하게 만들어줌
+  const clickedClass = "clicked";
+  if(h1.classList.contains(clickedClass)) {
+    h1.classList.remove(clickedClass);
+  } else {
+    h1.classList.add(clickedClass);
+  };
 }//마우스로 title를 click 할 때
 
 function handleMouseEnter(){

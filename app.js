@@ -1,13 +1,16 @@
 const h1 = document.querySelector(".hello h1")
 
 function handleTitleClick(){
-  if(h1.style.color === "blue"){
-    h1.style.color = "tomato"
+  const currentColor = h1.style.color;
+  let newColor;
+  if(currentColor === "blue"){
+    newColor = "tomato"
   }
   else{
-    h1.style.color = "blue"
+    newColor = "blue"
   }
-}//마우스로 title를 hover할 때
+  h1.style.color = newColor; //color에 newColor가 변화하게 만들어줌
+}//마우스로 title를 click 할 때
 
 function handleMouseEnter(){
   h1.innerText = "Mouse is here"
